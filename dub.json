@@ -8,6 +8,7 @@
 	"dependencies": {
 		"vibe-d:data": "==0.8.5",
 		"uim-core": "~>0.19.5",
-		"uim-oop": "~>0.19.5"
+		"uim-oop": "~>0.19.5",
+		"uim-html": "~>0.19.5"
 	}
 }
