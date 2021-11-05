@@ -2,7 +2,7 @@ module uim.angular;
 
 public import uim.core;
 public import uim.oop;
-public import uim.h5;
+public import uim.html;
 
 public import uim.angular.module_;
 
@@ -52,9 +52,9 @@ T ngController(T:DH5Obj)(T obj, string name, bool data = false) {
     return obj.attribute("ng-Controller", name);
 }
 unittest {
-    assert(H5Div.ngController("test") == `<div ng-controller="test"></div>`);
+/*     assert(H5Div.ngController("test") == `<div ng-controller="test"></div>`);
     assert(H5Div.ngController("test", true) == `<div data-ng-controller="test"></div>`);
-}
+ */}
 
 T ngRepeat(T:DH5Obj)(T obj, string name, bool data = false) {
     if (data)
