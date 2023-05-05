@@ -1,14 +1,41 @@
 {
 	"name": "uim-angular",
-	"authors": [ "UI Manufaktur" ],
+	"authors": ["UI Manufaktur Team"],
 	"description": "D library for working with Angular",
-	"copyright": "Copyright © 2019, UI Manufaktur UG",
-	"license": "Apache 2.0",
-    "targetType": "library",
+	"copyright": "Copyright © 2017-2022, UI Manufaktur UG",
+	"license": "Apache-2.0",
+	"targetType": "library",
 	"dependencies": {
-		"vibe-d:data": "==0.8.5",
-		"uim-core": "~>0.19.5",
-		"uim-oop": "~>0.19.5",
-		"uim-html": "~>0.19.5"
-	}
+		"vibe-d": "~>0.9.5"
+	},
+	"sourcePaths": [
+		"../uim-core",
+		"../uim-oop",
+		"../uim-css",
+		"../uim-html",
+		"../uim-json",
+		"../uim-javascript",
+		"../uim-jquery",
+		"./"
+	],
+	"importPaths": [
+		"../uim-core",
+		"../uim-oop",
+		"../uim-css",
+		"../uim-html",
+		"../uim-javascript",
+		"../uim-jquery",
+		"../uim-json",
+		"./"
+	],
+    "configurations": [
+		{
+			"name": "offline"
+		},
+		{
+			"name": "test",
+			"targetType": "library",
+			"versions": ["uim_jsonbase"]
+		}
+	]
 }
